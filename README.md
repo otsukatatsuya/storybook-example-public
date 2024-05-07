@@ -1,91 +1,40 @@
-<p align="center">
-  <a href="https://www.chromatic.com/">
-    <img alt="Chromatic" src="https://avatars2.githubusercontent.com/u/24584319?s=200&v=4" width="60" />
-  </a>
-</p>
+# 概要・目的
+出来上がったデザインをどのように実装に落とし込むかを体系的に学ぶ演習
 
-<h1 align="center">
-  Chromatic's Intro to Storybook React template
-</h1>
+## 状況
+- スマート・レシピのデザイン作業が進み、実装側に渡されている(React + Storybook)
+- ボタンの実装を進めているが、デザイン通りに実装されていない
+    - todo linkはる   
+- また、全サイズのボタンがStorybookで確認できない
 
-This template ships with the main React and Storybook configuration files you'll need to get up and running fast.
+## 目標
+- 最新のボタンデザインを実装し、Storybookで反映されていることが確認できる状態
+    - 背景色には決定したプライマリカラーを使用する
+- 全サイズのボタンをStorybookで確認できる状態
 
-## 🚅 Quick start
+## 実装関連
 
-1.  **Create the application.**
+### ディレクトリ構成
 
-    Use [degit](https://github.com/Rich-Harris/degit) to get this template.
+対象のファイルは以下です
 
-    ```shell
-    # Clone the template
-    npx degit chromaui/intro-storybook-react-template taskbox
-    ```
+```
+.
+└── src
+    └── stories
+        └── button.css
+        ├── Button.jsx
+        └── Button.stories.js
+```
 
-1.  **Install the dependencies.**
+### Storybook
 
-    Navigate into your new site’s directory and install the necessary dependencies.
+- [特定の状態(story)のコンポーネントを描画する方法](https://qiita.com/masakinihirota/items/ac552b8b492d2b962818#storybook%E3%81%A7%E6%9C%80%E5%B0%8F%E9%99%90%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%82%92%E4%BD%9C%E3%82%8B)
 
-    ```shell
-    # Navigate to the directory
-    cd taskbox/
+### CSS
 
-    # Install the dependencies
-    yarn
-    ```
+- [角を丸める方法](https://developer.mozilla.org/ja/docs/Web/CSS/border-radius)
+- [文字を太くする方法](https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/font-weight)
+- [背景色を変更する方法](https://developer.mozilla.org/ja/docs/Web/CSS/background-color)
 
-1.  **Open the source code and start editing!**
 
-    Open the `taskbox` directory in your code editor of choice and building your first component!
-
-1.  **Browse your stories!**
-
-    Run `yarn storybook` to see your component's stories at `http://localhost:6006`
-
-## 🔎 What's inside?
-
-A quick look at the top-level files and directories included with this template.
-
-    .
-    ├── .storybook
-    ├── node_modules
-    ├── public
-    ├── src
-    ├── .gitignore
-    ├── .index.html
-    ├── LICENSE
-    ├── package.json
-    ├── yarn.lock
-    ├── vite.config.js
-    └── README.md
-
-1.  **`.storybook`**: This directory contains Storybook's [configuration](https://storybook.js.org/docs/react/configure/overview) files.
-
-2.  **`node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages).
-
-3.  **`public`**: This directory will contain the development and production build of the site.
-
-4.  **`src`**: This directory will contain all of the code related to what you will see on your application.
-
-5.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
-
-6.  **`.index.html`**: This is the HTML page that is served when generating a development or production build.
-
-7.  **`LICENSE`**: The template is licensed under the MIT licence.
-
-8.  **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
-
-9.  **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
-
-10. **`vite.config.js`**: This is the configuration file for [Vite](https://vitejs.dev/), a build tool that aims to provide a faster and leaner development experience for modern web projects.
-
-11. **`README.md`**: A text file containing useful reference information about the project.
-
-## Contribute
-
-If you encounter an issue with the template, we encourage you to open an issue in this template's repository.
-
-## Learning Storybook
-
-1. Read our introductory tutorial at [Learn Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/).
-2. Learn how to transform your component libraries into design systems in our [Design Systems for Developers](https://storybook.js.org/tutorials/design-systems-for-developers/) tutorial.
-3. See our official documentation at [Storybook](https://storybook.js.org/).
