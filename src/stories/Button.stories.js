@@ -1,14 +1,15 @@
+// コンポーネントファイルを読み込む
 import { Button } from "./Button";
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
+/* Storyとして確認する対象のComponentを定義*/
 export default {
-  //階層構造を表現できる
+  //titleは階層構造を表現できる
   title: "Example/Button",
-  //対象のComponentを定義
   component: Button,
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
+/* Story単位で定義する  */
+// PrimaryのStory
 export const Primary = {
   args: {
     primary: true,
@@ -16,12 +17,14 @@ export const Primary = {
   },
 };
 
+// SecondaryのStory
 export const Secondary = {
   args: {
     label: "Button",
   },
 };
 
+// LargeのStory
 export const Large = {
   args: {
     size: "large",
@@ -29,6 +32,7 @@ export const Large = {
   },
 };
 
+// SmallのStory
 export const Small = {
   args: {
     size: "small",
