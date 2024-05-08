@@ -3,8 +3,7 @@
 
 ## 状況
 - スマート・レシピのデザイン作業が進み、実装側に渡されている(React + Storybook)
-- ボタンの実装を進めているが、デザイン通りに実装されていない
-    - todo linkはる   
+- ボタンの実装を進めているが、[デザイン](https://www.figma.com/file/ZIBg5VlYnRXdB4N03l4a39/Material-3-Design-Kit-(Community)?type=design&node-id=53923-27460&mode=design&t=81nSCMknLsgtQscM-4)通りに実装されていない
 - また、全サイズのボタンがStorybookで確認できない
 
 ## 目標
