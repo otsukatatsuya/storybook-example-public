@@ -1,10 +1,8 @@
 # 概要・目的
-出来上がったデザインをどのように実装に落とし込むかを体系的に学ぶ演習
+- 出来上がったデザインをどのように実装に落とし込むかを体系的に学ぶ演習
+- 実際にReact + StoryBookを実装する
 
-## 状況
-- スマート・レシピのデザイン作業が進み、実装側に渡されている(React + Storybook)
-- ボタンの実装を進めているが、[デザイン](https://www.figma.com/file/ZIBg5VlYnRXdB4N03l4a39/Material-3-Design-Kit-(Community)?type=design&node-id=53923-27460&mode=design&t=81nSCMknLsgtQscM-4)通りに実装されていない
-- また、全サイズのボタンがStorybookで確認できない
+
 
 ## 目標
 - 最新のボタンデザインを実装し、Storybookで反映されていることが確認できる状態
@@ -36,4 +34,16 @@
 - [文字を太くする方法](https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/font-weight)
 - [背景色を変更する方法](https://developer.mozilla.org/ja/docs/Web/CSS/background-color)
 
+## ローカルで作業する手順
 
+- 前提
+  - node,npmがinstall済み
+
+1. 任意の作業フォルダに移動
+2. 以下のコマンドで、リポジトリを取得
+`git clone https://github.com/otsukatatsuya/storybook-example-public.git`
+3. 任意のIDEを用いて、そちらを開く
+4. ルートで、以下のコマンドを実行
+`npm i`
+`npm run storybook`
+5. webサーバーが立ち上がり、正常に閲覧できることを確認する
