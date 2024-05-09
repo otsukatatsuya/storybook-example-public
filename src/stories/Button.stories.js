@@ -23,19 +23,3 @@ export const Secondary = {
     label: "Button",
   },
 };
-
-// LargeのStory
-export const Large = {
-  args: {
-    size: "large",
-    label: "Button",
-  },
-};
-
-// SmallのStory
-export const Small = {
-  args: {
-    size: "small",
-    label: "Button",
-  },
-};
