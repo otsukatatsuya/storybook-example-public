@@ -1,8 +1,7 @@
 # 概要・目的
 - 出来上がったデザインをどのように実装に落とし込むかを体系的に学ぶ演習
 - 実際にReact + StoryBookを実装する
-
-
+- [デザイン](https://www.figma.com/file/77z4ekDS0ykkw2ZYg8X0Hp/Material-3-Design-Kit-(Community)?type=design&node-id=51159-4655&mode=dev)
 
 ## 目標
 - 最新のボタンデザインを実装し、Storybookで反映されていることが確認できる状態
@@ -41,9 +40,13 @@
 
 1. 任意の作業フォルダに移動
 2. 以下のコマンドで、リポジトリを取得
-`git clone https://github.com/otsukatatsuya/storybook-example-public.git`
-3. 任意のIDEを用いて、そちらを開く
-4. ルートで、以下のコマンドを実行
-`npm i`
-`npm run storybook`
-5. webサーバーが立ち上がり、正常に閲覧できることを確認する
+```
+git clone https://github.com/otsukatatsuya/storybook-example-public.git
+```
+4. 任意のIDEを用いて、そちらを開く
+5. ルートで、以下のコマンドを実行
+```
+npm i
+npm run storybook
+```
+7. webサーバーが立ち上がり、正常に閲覧できることを確認する
