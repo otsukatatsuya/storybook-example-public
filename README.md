@@ -1,8 +1,8 @@
 # 概要・目的
 - 出来上がったデザインをどのように実装に落とし込むかを体系的に学ぶ演習
 - 実際にReact + StoryBookを実装する
-- [デザイン](https://www.figma.com/file/77z4ekDS0ykkw2ZYg8X0Hp/Material-3-Design-Kit-(Community)?type=design&node-id=51159-4655&mode=dev)
-
+- [デザイン](https://www.figma.com/file/77z4ekDS0ykkw2ZYg8X0Hp/Material-3-Design-Kit-(Community)?type=design&node-id=53923-27456&mode=dev)
+  
 ## 現状
 - FilledとOutlineの両方のボタンが用意されてはいるが、デザインと合っていない。
 
