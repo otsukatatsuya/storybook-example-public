@@ -1,21 +1,40 @@
+/**
+  元の記述から変更している部分に関しては、!マークを先頭につけたコメントを残しています。
+**/
+:root {
+  /**!頻繁に使用するカラーコードを変数で管理する**/
+  --m3-sys-light-primary: #6750a4;
+  --m3-sys-light-outline: #79747e;
+}
+
 /** ベースのスタイル **/
 .storybook-button {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 0;
   cursor: pointer;
   display: inline-block;
-  line-height: 1;
+  /**!文字の太さの変更**/
+  font-weight: 500;
+  /**!文字の行間の高さの変更**/
+  line-height: 20px;
+  /**!角の丸みの変更**/
+  border-radius: 100px;
+  /**!Padding(テキストから枠線までの幅)の変更**/
+  padding: 10px 24px;
 }
 
 /** プライマリーのスタイル **/
 .storybook-button--primary {
   color: white;
-  background-color: #1ea7fd;
+  /**!適切な背景色に変更**/
+  background-color: var(--m3-sys-light-primary);
 }
 
 /** セカンダリーのスタイル **/
 .storybook-button--secondary {
-  color: #333;
+  /**!適切なテキスト色に変更**/
+  color: var(--m3-sys-light-primary);
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  /**!枠線の適用**/
+  border: 1px solid var(--m3-sys-light-outline);
 }
